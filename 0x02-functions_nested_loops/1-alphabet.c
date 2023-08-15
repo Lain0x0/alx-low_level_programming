@@ -1,26 +1,23 @@
 #include "main.h"
-
 /**
- *  main - entry point of our program
+ * main : check the code for the program
  *
- *  Description : This is a A C program that print using _putchar function
+ * Description : A C program that print alphabet in lowercase
  *
- *  Return: Always 0 (Success)
+ * alphabet : another function in the code
+ *
+ * Return: always 0 (success)
 */
 int main(void)
+
+	void alphabet(void)
 {
-	char ala[] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
-		while
-		(i > 0);
+	char alphabet;
 
+		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+			_putchar(alphabet);
 
-		{
-
-			int _putchar(char ala);
-			i++;
-
-		}
-
-	return (0);
+			_putchar('\n');
 }
+
+
