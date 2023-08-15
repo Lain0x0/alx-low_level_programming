@@ -16,7 +16,7 @@ void print_alphabet_x10(void)
 		{
 			putchar(a);
 		}
-			putchar(10);
+		putchar(10);
 	}
 }
 
