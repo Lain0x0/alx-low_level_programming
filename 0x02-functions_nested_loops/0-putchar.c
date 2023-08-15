@@ -1,20 +1,24 @@
-#include "main.h"
+#include"main.h"
+
 /**
- *   main - entry point of our program
+ * main - check about the program we write 
  *
- *  Description : A C program that print _putchar
+ * Program that prints _putchar, followed by a new line
  *
- * Return: 0
+ * Return: always 0 (success)
 */
+
 int main(void)
 {
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	char s[] = "_putchar";
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	_putchar(10);
+
 	return (0);
 }
