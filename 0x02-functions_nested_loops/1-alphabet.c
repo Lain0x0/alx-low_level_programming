@@ -9,7 +9,7 @@
 */
 int main(void)
 {
-	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+	char ala[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
 		while
 		(i > 0);
@@ -17,7 +17,7 @@ int main(void)
 
 		{
 
-			int _putchar(char alpha);
+			int _putchar(char ala);
 			i++;
 
 		}
