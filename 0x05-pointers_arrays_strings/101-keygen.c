@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/**
+ * main - program that generates random valid password
+ *
+ * Return: Always 0 (Success)
+ *
+*/
 
 int main(void)
 {
