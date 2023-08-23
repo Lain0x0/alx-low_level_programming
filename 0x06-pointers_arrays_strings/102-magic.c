@@ -1,9 +1,4 @@
 #include <stdio.h>
- /**
-  * main - program that do mgic and writing line of code
-  *
-  * Return: 0.
-*/
 int main(void)
 {
 	int n;
