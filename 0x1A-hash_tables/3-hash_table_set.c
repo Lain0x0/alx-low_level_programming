@@ -1,13 +1,13 @@
 #include "hash_tables.h"
 /**
- * shash_table_set - adds an element to the hash table.
+ * hash_table_set - adds an element to the hash table.
  * @ht: hash table
  * @key: is the key. key can not be an empty string
  * @value: value associated with the key.
  * value must be duplicated. value can be an empty string
  * Return: 1 on success, 0 on failurre
  */
-int shash_table_set(shash_table_t *ht, const char *key, const char *value)
+int hash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 
 shash_node_t *node;
