@@ -24,10 +24,10 @@ free(ht);
 
 
 /**
- * free_hash_l - frees a hash_node_t list
+ * free_hash_list - frees a hash_node_t list
  * @head: head of linked list
  */
-void free_hash_l(hash_node_t *head)
+void free_hash_list(hash_node_t *head)
 {
 	hash_node_t *current;
 	hash_node_t *next;
