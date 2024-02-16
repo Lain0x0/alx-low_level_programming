@@ -12,14 +12,14 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
-	char *valuecp, *keycp;
+	char *valuecopy, *keycopy;
 	hash_node_t  *bucket, *new_node;
 
 	if (!ht || !key || !*key || !value)
 		return (0);
 
-	valuecp = strdup(value);
-	if (!valuecp)
+	valuecopy = strdup(value);
+	if (!valuecopy)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
@@ -30,7 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (!strcmp(key, bucket->key))
 		{
 			free(bucket->value);
-			bucket->value = valuecp;
+			bucket->value = valuecopy;
 			return (1);
 		}
 		bucket = bucket->next;
@@ -41,11 +41,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(valuecopy);
 		return (0);
 	}
-	keycp = strdup(key);
-	if (!keycp)
+	keycopy = strdup(key);
+	if (!keycopy)
 		return (0);
-	new_node->key = keycp;
-	new_node->value = valuecp;
+	new_node->key = keycopy;
+	new_node->value = valuecopy;
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
 	return (1);
