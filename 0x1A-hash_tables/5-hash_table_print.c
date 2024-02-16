@@ -7,20 +7,20 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int x = 0;
+	unsigned long int i = 0;
 	hash_node_t  *bucket;
-	int n_fin = 0;
+	int not_fin = 0;
 
 	if (!ht)
 		return;
 
 	printf("{");
-	for (x = 0; x < ht->size; x++)
+	for (i = 0; i < ht->size; i++)
 	{
 		bucket = ht->array[x];
 		while (bucket)
 		{
-			if (n_fin)
+			if (not_fin)
 				printf(", ");
 			printf("'%s': '%s'", bucket->key, bucket->value);
 			not_fin = 1;
