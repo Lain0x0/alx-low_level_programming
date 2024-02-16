@@ -34,20 +34,6 @@ typedef struct hash_table_s
      hash_node_t **array;
 } hash_table_t;
 
-/**
- * struct hash_table - Hash table data structure
- *
- * @size: The size of the array
- * @array: An array of size @size
- *         Each cell of this array is a pointer to the first node of a linked list,
- *         because we want our HashTable to use a Chaining collision handling
- */
-typedef struct hash_table
-{
-	unsigned long int size;
-	hash_node_t **array;
-} hash_table_t;
-
 /* Functions */
 hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
